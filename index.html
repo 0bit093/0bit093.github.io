@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #008080 ;
+  color: white;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #008080;
+  color: white;
+}
+.p{
+	font-family:verdana;
+	font-size:30px
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+/* all text inside p tags to black */
+  p{
+    color: rgb(0, 0, 0);
+  }
+  /* adding icons */
+  .fa {
+    padding: 30px;
+    font-size: 5px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+</style>
+
+<!-- for adding social media icons to Contact -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body data-spy="scroll">
+
+<!-- Header -->
+<div class="header">
+  <h1>Madhusudhan Ramakrishnaiah</h1>
+  <p>Seeking software engineer <b>Full-time</b> positions in 2019 spring.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#section1">Summary</a>
+  <a href="#section2">Experience</a>
+  <a href="#section3">Education</a>
+  <a href="#section4">Projects</a>
+  <a href="#section5">Skills</a>
+  <a href="#section6">Interests</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h3 style="color:#FA8072">About Me</h3>
+
+    <p>I did my undergrad in the field of computer science from India and I came to united states in August-2016 for pursuing my master's degree in Computer-Science.<br><br>
+ 	   I am keen on learning latest technologies and I very much like building new innovative things that can have an impact on the environment that we live in.<br><br>
+	   Basically, I like solving problems and building new things which is why computer science has always fascinated me.<br><br>
+    </p>
+
+    <h3 style="color: #008080">Contact</h3>
+    <!--
+    <a href="mailto:madhusudhana93@gmail.com?subject= &body= " class="fa fa-google"></a>
+    <a href="https://www.linkedin.com/in/rmadhusudhan/" class="fa fa-linkedin"></a>         -->
+
+    Gmail:     <a href="mailto:madhusudhana93@gmail.com?subject= &body= "> madhusudhana93@gmail.com </a><br><br>
+    LinkedIn:  <a href="https://www.linkedin.com/in/rmadhusudhan/"> www.linkedin.com/in/rmadhusudhan </a> <br><br>
+    GitHub:    <a href="https://github.com/0bit093"> https://github.com/0bit093 </a>
+  </div>
+
+  <div class="main">
+      <div id = "section1" >
+        <h3 style="color: rgb(255, 165, 0)">Summary</h3>
+        <p> I am currently a final-semester M.S. in Computer Science student at Texas State University, and I am aiming at becoming a versatile software engineer.
+          I am interested in being a software devloper/engineer and have experience in developing projects.
+          I developed strong coding skills in C++, Java and have a deep understandings of algorithms while working on projects.
+          I am mainly looking for software engineer jobs, but I am also interested in data science and/or researcher jobs.</p>
+        </div>
+
+        <div id = "section2">
+          <h3 style="color: rgb(60, 179, 113)">Experience</h3>
+          <ul>
+            <li><h4><p>Graduate Instructional Assistant(GIA) | Texas State University | Aug 2017 - Dec 2018</p></h4>
+              <p>I worked as a Graduate Instructional Assistant(GIA) for Computer Science Department until my graduation.
+                 There were 3 job roles as part of my work as a GIA.<br>
+                 One being "Lead Lab Instructor"
+                 where in i had to teach undergrad students concepts and had to conduct tests based on the concepts taught.
+                 Second being "Lab Tutor" wherein undergrad students from Computer Science will ask doubts regarding the problems and/or concepts that they are unable to solve/understand and i had to solve them.
+                 Third role was to monitor the labs.
+               </p>
+            </li>
+
+            <li><h4><p>Grader (CS2308 - Algorithms) | Texas state university | Feb 2017 - April 2017<p></h4>
+              <p> I worked as a grader for Algorithms course CS2308 that is
+                  taken up by undergraduate students as part of their course work in Computer Science.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div id = "section3">
+          <h3 style="color: rgb(103, 127, 215)">Education</h3>
+          <ul>
+            <li>
+              <p><b>Master of Science (M.S) | Texas State University, USA </b>
+                <br><b>Major:</b> Computer Science
+                <br><b>Gpa:</b> 3.5/4.0
+                <br><b>Year:</b> August 2016 - December 2018</p>
+            </li>
+            <li>
+                <p><b>Bachelor's of Engineering Degree (B.E) | Siddaganga Institue of Technology, India </b>
+                  <br><b>Major:</b> Computer Science
+                  <br><b>Year:</b> September 2011 - June 2015</p>
+            </li>
+          </ul>
+        </div>
+
+            <div id="section4">
+              <h3 style="color: rgb(190, 127, 215)">Projects</h3>
+              <ul>
+                <li>
+                  <h4><p>Connect Four Game using Minmax-A-B and Alpha-Beta search algorithms<br>
+                         October 2017 - December 2017</p></h4>
+                  <p>This project was done in Advanced Artificial Intelligence Course taken in Master's program. The project was developed using c++.
+                     Goal of this project was to develop an intelligent system that was capable of playing against each other i.e. both players being the system itself but equipped to use different algorithms to find & make the optimal move at each turn.
+                     Main concepts used were Minmax-A-B and Alpha-Beta search algorithms.
+                     This was used for  generating the trees for all possible combinations that a player can make and then select the optimal move based on the utility value that is assigned for each cell given by the utility function that was implemented.
+                     The system was simulated to play against itself and for each simulation all combinations of algorithm was chosen for each player and the results were analysed.
+                  </p>
+                </li>
+
+                <li>
+                  <h4><p>Cancer Diagnostic Software (An Intelligent Computer Expert System for Diagnosing Cancer)<br>
+                         August 2017 - October 2017</p>
+                  </h4>
+                  <p>This project was done in Advanced Artificial intelligence Course taken in Master's program. The project was completely developed using c++.
+                     Goal of this project was to develop an intelligent system that was capable of detecting the type of cancer a person might have depending on the symptoms that are selected by the person and then give a list of possible treatments.
+                     It mainly used backward chaining and forward chaining algorithm concepts.
+                     Backward chaining was used for detecting the type of cancer & forward chaining algorithm was applied to list the treatments.
+                  </p>
+                </li>
+
+                <li>
+                  <h4><p>Cache System Simulation<br>
+                         June 2017 - July 2017</p>
+                  </h4>
+                  <p>This project was done in Graphical User Interface Course taken in Master's program.
+                     The project was developed using Qt Creator and OpenGL. The aim of this was to develop a user
+                     interface to simulate cache system based on the user input, i.e. by taking user inputs like
+                     the type of replacement policy(LRU/LFU/Random), Cache Type(Instruction/Data Cache), and also giving
+                     user an option to select the number of ways, sets, bytes per block; memory size.
+                     There was also an option for    user to input a file called Trace file that contains a list of
+                     hexadecimal memory addresses for the system to simulate and record number of cache hits and cache miss.
+                  </p>
+                </li>
+
+                <li>
+                  <h4><p>Online Book Keeping Website<br>
+                         August 2016 - December 2016</p>
+                  </h4>
+                  <p>Developed a book keeping website using Eclipse IDE.
+                  	 Used Spring MVC to develop the project.
+                  	 View was implemented using Html and Jsp. Form validations was done using JavaScript.
+                  	 Data was maintained using MySql.
+                  	 Application was deployed on Apache Tomcat Server platform.
+                  </p>
+                </li>
+
+                <li>
+                  <h4><p>Adaptive Learning System Using Cloud (Based on IEEE paper)<br>
+                         April 2015 - June 2015</p>
+                  </h4>
+                  <p>The simplest means of determining a student's skill level is the method
+                     employed in CAT (computerized adaptive testing). As the test proceeds, the computer adjusts
+                     the subject’s score based on their answers, continuously fine-tuning the score by selecting questions
+                     from a narrower range of difficulty. This application was deployed on cloud platform called open-shift
+                     and the web pages will be deployed using HTML/JSP, JavaScript for validation and the database will be
+                     maintained using MySql and the server will be Tomcat. Also Internet connection is required for the successful
+                     execution of this application.
+                  </p>
+                </li>
+
+                <li>
+                  <h4><p>Mobile Service Provider Portal<br>
+                         Oct 2014 - Dec 2014</p>
+                  </h4>
+                  <p>This project is aimed to automate the operations of Mobile Service Providers. There are many websites available
+                    which gives details for each mobile server. But all these details that too for all mobile service provider of different
+                    region is not present in one single place. So main objective of this portal will be to bring together all the details
+                    and make it easily available for the user. It will be available for both prepaid and postpaid services providing their
+                    specific details. This system is a browser which is completely related to Internet browsing. This allows for
+                    multi-divisional, multi- department system handling that includes various services. In this system windows 7 is used
+                    as operating system; html, php, css for user interface; php, mysql for programming
+                  </p>
+                </li>
+              </ul>
+              <p></p>
+            </div>
+
+            <div id="section5">
+              <h3 style="color: #FF00FF">Skills</h3>
+              <ul>
+              	<li> <b>Programming Languages</b>    : C++, Java, Python </li> <br>
+              	<li> <b>Frameworks</b>               : Spring Core, Spring MVC, QT, OpenGL </li> <br>
+              	<li>  <b>Database</b>                : Oracle 10g, MySql, DBSqlite3 </li> <br>
+              	<li>  <b>Web Technologies</b> 		 : HTML, CSS, JSP, Servlets </li> <br>
+              	<li>  <b>Tools/IDEs</b> 			 : Eclipse, Apache Tomcat, Git, Atom, PyCharm</li> <br>
+              </ul>
+            </div>
+
+            <div id="section6">
+              <h3 style="color: rgb(255, 99, 71)">Interests</h3>
+              <p>I like swimming, playing cricket, travelling to other places and experiencing new things.</p>
+            </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>Last Updated: Feb-2019</h4>
+</div>
+
+</body>
+</html>
